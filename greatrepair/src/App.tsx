@@ -14,5 +14,5 @@ type Props = {
 
 export const Profile: React.FC<Props> = (props) => {
 
-  return <>{props.name}</>
+  return <>{props.name}123</>
 }
