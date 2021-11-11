@@ -3,7 +3,7 @@ import React, { ProviderProps } from 'react';
 
 export const Home: React.FC = () => {
   return <div><div>Hello world</div>
-  <Profile name={'Arjen'} icon={''}/>
+  <Profile name={'Arjen Tromp'} icon={''}/>
   </div>
 }
 
