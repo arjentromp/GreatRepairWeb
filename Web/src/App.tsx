@@ -1,18 +1,9 @@
 import userEvent from '@testing-library/user-event';
 import React, { ProviderProps } from 'react';
+import { RedPage } from './Pages/Redpage/redpage';
 
 export const Home: React.FC = () => {
-  return <div><div>Hello world</div>
-  <Profile name={'Arjen Tromp'} icon={''}/>
-  </div>
-}
+  
+  return  <RedPage/>
 
-type Props = {
-  name: string;
-  icon: string;
-}
-
-export const Profile: React.FC<Props> = (props) => {
-
-  return <>{props.name}123</>
 }
