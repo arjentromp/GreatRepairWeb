@@ -5,5 +5,5 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 75%;
+  max-height: 200px;
 `;
