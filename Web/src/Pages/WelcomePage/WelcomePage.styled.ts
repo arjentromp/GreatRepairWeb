@@ -10,6 +10,11 @@ export const Container = styled.div`
 `;
 
 export const Login = styled.div`
+  width: 40%;
+  text-align: center;
+
   font-size: 50px;
   font-weight: bold;
+  border-bottom: solid black 1px;
+  padding: 3px;
 `;
