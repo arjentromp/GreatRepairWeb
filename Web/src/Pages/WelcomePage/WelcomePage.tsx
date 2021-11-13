@@ -1,7 +1,7 @@
 import React from "react";
-import { InputBox } from "../../Components/InputBox/InputBox";
+import { Footer } from "../../Components/Footer/Footer";
 import { Logo } from "../../Components/Logo/Logo";
-import { Container, Login } from "./WelcomePage.styled";
+import { Container, Input, Login, LoginContainer } from "./WelcomePage.styled";
 
 export const WelcomePage: React.FC = () => {
   return (
@@ -10,7 +10,14 @@ export const WelcomePage: React.FC = () => {
       <Login>Login</Login>
       <br />
       <br />
-      <InputBox />
+      <LoginContainer>
+        <input type="text" placeholder="Voornaam" />
+
+        <input type="text" placeholder="Wachtwoord" />
+
+        <Input type="submit" value="Log in" />
+      </LoginContainer>
+      <Footer />
     </Container>
   );
 };
