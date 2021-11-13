@@ -8,3 +8,8 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
 `;
+
+export const Login = styled.div`
+  font-size: 50px;
+  font-weight: bold;
+`;

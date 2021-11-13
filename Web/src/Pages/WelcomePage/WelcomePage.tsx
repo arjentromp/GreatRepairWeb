@@ -1,13 +1,15 @@
 import React from "react";
 import { InputBox } from "../../Components/InputBox/InputBox";
 import { Logo } from "../../Components/Logo/Logo";
-import { Container } from "./WelcomePage.styled";
+import { Container, Login } from "./WelcomePage.styled";
 
 export const WelcomePage: React.FC = () => {
   return (
     <Container>
       <Logo />
-      <p>Login</p>
+      <Login>Login</Login>
+      <br />
+      <br />
       <InputBox />
     </Container>
   );
