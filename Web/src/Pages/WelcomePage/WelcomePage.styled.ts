@@ -26,7 +26,7 @@ export const LoginContainer = styled.div`
   gap: 20px;
 `;
 
-export const Input = styled.input`
+export const Button = styled.input`
   cursor: pointer;
 `;
 

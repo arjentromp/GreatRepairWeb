@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Footer } from "../../Components/Footer/Footer";
 import { Logo } from "../../Components/Logo/Logo";
-import { Container, Input, Login, LoginContainer } from "./WelcomePage.styled";
+import { Container, Login, LoginContainer, Button } from "./WelcomePage.styled";
 
 export const WelcomePage: React.FC = () => {
+  const [Name, Setname] = useState("");
+
+  const [Password, SetPassword] = useState("");
+
+  const SubmitValues = () => {};
+
+  console.log(Name);
+
   return (
     <Container>
       <Logo />
@@ -11,13 +19,25 @@ export const WelcomePage: React.FC = () => {
       <br />
       <br />
       <LoginContainer>
-        <input type="text" placeholder="Voornaam" />
-
+        <input
+          onChange={(event) => Setname(event.currentTarget.value)}
+          id="UserNameInput"
+          type="text"
+          placeholder="Voornaam"
+          value={Name}
+        />
         <input type="text" placeholder="Wachtwoord" />
-
-        <Input type="submit" value="Log in" />
+        <Button type="submit" value="login" />
       </LoginContainer>
       <Footer />
     </Container>
   );
 };
+
+//<LoginContainer>
+//  <form onSubmit={handleSubmit}>
+//    <input id="UserNameInput" type="text" placeholder="Voornaam" />
+//    <input type="text" placeholder="Wachtwoord" />
+//    <input type="submit" value="login" />
+//  </form>
+//</LoginContainer>;
