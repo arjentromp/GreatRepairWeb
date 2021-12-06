@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100%;
@@ -28,6 +28,10 @@ export const LoginContainer = styled.div`
 
 export const Button = styled.input`
   cursor: pointer;
+`;
+
+export const ErrorMessage = styled.div`
+  color: red;
 `;
 
 export const Anchor = styled.div`

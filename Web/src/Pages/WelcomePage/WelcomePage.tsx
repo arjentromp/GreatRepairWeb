@@ -1,16 +1,25 @@
-import React, { useState } from "react";
-import { Footer } from "../../Components/Footer/Footer";
-import { Logo } from "../../Components/Logo/Logo";
-import { Container, Login, LoginContainer, Button } from "./WelcomePage.styled";
+import React, { useState } from 'react';
+import { Footer } from '../../Components/Footer/Footer';
+import { Logo } from '../../Components/Logo/Logo';
+import { Container, Login, LoginContainer, Button, ErrorMessage } from './WelcomePage.styled';
 
-export const WelcomePage: React.FC = () => {
-  const [Name, Setname] = useState("");
+type Props = {
+  setName: (name: string) => void;
+};
 
-  const [Password, SetPassword] = useState("");
+export const WelcomePage: React.FC<Props> = (props) => {
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
 
-  const SubmitValues = () => {};
-
-  console.log(Name);
+  const submitValues = () => {
+    if (name === 'Herman' && password === '123') {
+      setError('');
+      props.setName('Herman');
+    } else {
+      setError('Incorrect username or password');
+    }
+  };
 
   return (
     <Container>
@@ -20,14 +29,20 @@ export const WelcomePage: React.FC = () => {
       <br />
       <LoginContainer>
         <input
-          onChange={(event) => Setname(event.currentTarget.value)}
+          onChange={(event) => setName(event.currentTarget.value)}
           id="UserNameInput"
           type="text"
           placeholder="Voornaam"
-          value={Name}
+          value={name}
         />
-        <input type="text" placeholder="Wachtwoord" />
-        <Button type="submit" value="login" />
+        <input
+          onChange={(event) => setPassword(event.currentTarget.value)}
+          type="password"
+          placeholder="Wachtwoord"
+          value={password}
+        />
+        {error && <ErrorMessage> {error} </ErrorMessage>}
+        <Button type="submit" value="login" onClick={submitValues} />
       </LoginContainer>
       <Footer />
     </Container>
