@@ -1,10 +1,16 @@
 import React from "react";
 import {
   Container,
+  ContentWrapper,
   Content,
-  ContentHeader,
-  FilterDropdown,
-  Ticket,
+  Filter,
+  Omschrijving,
+  Gebruiker,
+  Locatie,
+  Datum,
+  Urgentie,
+  Tickets,
+  Tickets1,
 } from "./HomePage.styled";
 import { Menu } from "../../Components/Menu/Menu";
 import { Footer } from "../../Components/Footer/Footer";
@@ -17,20 +23,53 @@ export const HomePage: React.FC<Props> = ({ name }) => {
   return (
     <Container>
       <Menu />
-      <Content>
-        <ContentHeader>Titel</ContentHeader>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-        <Ticket>hallo</Ticket>
-      </Content>
-      <Footer />
+      <ContentWrapper>
+        <Content>
+          <Filter>
+            <Omschrijving>Omschrijving</Omschrijving>
+            <Locatie>Locatie</Locatie>
+            <Gebruiker>Gebruiker</Gebruiker>
+            <Datum>Datum</Datum>
+            <Urgentie>Urgentie</Urgentie>
+          </Filter>
+          <Tickets1>
+            <Omschrijving>Omschrijving</Omschrijving>
+            <Locatie>Locatie</Locatie>
+            <Gebruiker>Gebruiker</Gebruiker>
+            <Datum>Datum</Datum>
+            <Urgentie>Urgentie</Urgentie>
+          </Tickets1>
+          <Tickets>
+            <Omschrijving>Omschrijving</Omschrijving>
+            <Locatie>Locatie</Locatie>
+            <Gebruiker>Gebruiker</Gebruiker>
+            <Datum>Datum</Datum>
+            <Urgentie>Urgentie</Urgentie>
+          </Tickets>
+          <Tickets1>
+            <Omschrijving>Omschrijving</Omschrijving>
+            <Locatie>Locatie</Locatie>
+            <Gebruiker>Gebruiker</Gebruiker>
+            <Datum>Datum</Datum>
+            <Urgentie>Urgentie</Urgentie>
+          </Tickets1>
+          <Tickets>
+            <Omschrijving>Omschrijving</Omschrijving>
+            <Locatie>Locatie</Locatie>
+            <Gebruiker>Gebruiker</Gebruiker>
+            <Datum>Datum</Datum>
+            <Urgentie>Urgentie</Urgentie>
+          </Tickets>
+          <Tickets1>
+            <Omschrijving>Omschrijving</Omschrijving>
+            <Locatie>Locatie</Locatie>
+            <Gebruiker>Gebruiker</Gebruiker>
+            <Datum>Datum</Datum>
+            <Urgentie>Urgentie</Urgentie>
+          </Tickets1>
+        </Content>
+        <Footer />
+      </ContentWrapper>
     </Container>
   );
 };

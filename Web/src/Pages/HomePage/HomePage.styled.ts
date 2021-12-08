@@ -4,33 +4,56 @@ export const Container = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-grow: 1;
   flex-direction: column;
 `;
 
 export const Content = styled.div`
-  height: 100%;
-  width: 750px;
-  margin: 0px auto auto auto;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 `;
 
-export const ContentHeader = styled.div`
-  background: rgba(232, 232, 232, 0.8);
-  height: 50px;
-  width: 750px;
+export const Filter = styled.div`
+  margin-top: 150px;
+  padding-left: 15px;
+  padding-bottom: 10px;
   display: flex;
-  align-items: center;
+  column-gap: 5px;
+  border-bottom: 2px solid black;
 `;
 
-export const FilterDropdown = styled.div`
-  width: 120px;
-  height: 50px;
-  font-size: 20px;
-  margin-right: 5px;
+export const Omschrijving = styled.div`
+  flex-grow: 2;
+`;
+
+export const Gebruiker = styled.div`
+  flex-grow: 1;
+`;
+
+export const Locatie = styled.div`
+  flex-grow: 1;
+`;
+
+export const Datum = styled.div`
+  flex-grow: 1;
+`;
+
+export const Urgentie = styled.div`
+  flex-grow: 0.5;
+`;
+
+export const Tickets = styled.div`
+  height: 20px;
+  padding: 3px 0px 3px 15px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  column-gap: 5px;
   cursor: pointer;
 
   &:hover {
@@ -38,10 +61,13 @@ export const FilterDropdown = styled.div`
   }
 `;
 
-export const Ticket = styled.div`
+export const Tickets1 = styled.div`
+  height: 20px;
+  padding: 3px 0px 3px 15px;
+  display: flex;
+  flex-direction: row;
   background: white;
-  height: 50px;
-  margin-bottom: 2px;
+  column-gap: 5px;
   cursor: pointer;
 
   &:hover {

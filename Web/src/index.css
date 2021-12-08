@@ -11,10 +11,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-family: sans-serif, Arial, Serif;
 }
 
 body {
-  background: rgba(232, 232, 232, 0.8);
+  background: rgba(216, 216, 216, 0.8);
 
   margin: 0;
   height: 100%;
