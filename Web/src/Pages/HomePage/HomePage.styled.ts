@@ -1,8 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: row;
 `;
@@ -12,6 +11,7 @@ export const ContentWrapper = styled.div`
   flex-grow: 1;
   flex-direction: column;
 `;
+<<<<<<< HEAD
 
 export const Content = styled.div`
   flex-grow: 1;
@@ -74,3 +74,5 @@ export const Tickets1 = styled.div`
     opacity: 0.7;
   }
 `;
+=======
+>>>>>>> parent of bbfb614 (Outdated versie upload voor vragen.)

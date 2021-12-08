@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import {
   Container,
@@ -14,12 +15,17 @@ import {
 } from "./HomePage.styled";
 import { Menu } from "../../Components/Menu/Menu";
 import { Footer } from "../../Components/Footer/Footer";
+=======
+import React from 'react';
+import { Container } from './HomePage.styled';
+>>>>>>> parent of bbfb614 (Outdated versie upload voor vragen.)
 
 type Props = {
   name: string;
 };
 
 export const HomePage: React.FC<Props> = ({ name }) => {
+<<<<<<< HEAD
   return (
     <Container>
       <Menu />
@@ -72,6 +78,7 @@ export const HomePage: React.FC<Props> = ({ name }) => {
       </ContentWrapper>
     </Container>
   );
+=======
+  return <Container>{name}</Container>;
+>>>>>>> parent of bbfb614 (Outdated versie upload voor vragen.)
 };
-//Locatie: The Mission, Omschrijving: Lichtsensor kapot, Aangemaakt
-//          door: Arjen, Datum toegevoegd: 08-12-2021
